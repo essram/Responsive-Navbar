@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    background-color: #00246B;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: #CADCFC;
+    height: 50px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+}
+
+nav ul li a{
+    color: #CADCFC;
+    text-decoration: none;
+    font-size: 0.8em ;
+}
+
+nav ul li a:hover{
+    color: rgba(202, 220, 252, 0.8);
+}
+
+/* Hamburger Menu */
+
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #CADCFC;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoint*/
+
+/* Ukuran Tablet */
+@media screen and (max-width : 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width : 576px) {
+    nav ul{
+        display: none;
+    }
+}
+
